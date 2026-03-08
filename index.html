@@ -1,52 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tirumla Dresses - Boutique Clothing Shop</title>
-        
-        <!-- ADD THIS LINE FOR THE LOGO -->
-        <link rel="icon" type="image/png" href="favicon.png">
-        
-        <!-- OPTIONAL: For Apple/iPhone Bookmarks -->
-        <link rel="apple-touch-icon" href="favicon.png">
-    
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tirumala Boutique | Elegant Clothing & Custom Stitching</title>
+  <meta name="description" content="Modern interactive boutique website for premium ethnic, casual, and uniform clothing with custom stitching, collections, offers, and appointments." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">Tirumla Dresses</div>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#products">Collection</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div class="cursor-glow"></div>
 
-    <section id="home" class="hero">
-        <h1>Exquisite Dresses for Every Occasion</h1>
-        <p>Premium quality. Modern designs. Tirumla Dresses.</p>
-        <a href="#products" class="btn">View Collection</a>
-    </section>
+  <header class="topbar">
+    <div class="brand-wrap">
+      <div class="brand-mark">TB</div>
+      <div>
+        <h1>Tirumala Boutique</h1>
+        <p>Premium fabrics, custom fits, timeless style</p>
+      </div>
+    </div>
 
-    <section id="products">
-        <h2>Our Featured Collection</h2>
-        <div class="product-grid">
-            <!-- Product Item 1 -->
-            <div class="product-card">
-                <img src="images/dress1.jpg" alt="Beautiful Dress">
-                <h3>Floral Party Wear</h3>
-                <p>₹1,299</p>
-                <a href="https://wa.me/91XXXXXXXXXX?text=Hi, I want to buy the Floral Dress" class="buy-btn">Order on WhatsApp</a>
-            </div>
-            <!-- Duplicate the product-card for more dresses -->
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#collections">Collections</a>
+      <a href="#craftsmanship">Craftsmanship</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button class="ghost-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
+      <button class="ghost-btn mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
+      <a class="primary-btn" href="#appointment">Book Visit</a>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#collections">Collections</a>
+    <a href="#craftsmanship">Craftsmanship</a>
+    <a href="#lookbook">Lookbook</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <span class="eyebrow">Boutique clothing experience</span>
+        <h2>Where every fabric becomes a signature style.</h2>
+        <p>
+          Discover handcrafted ethnic wear, elegant daily outfits, festive collections, and custom tailoring with an immersive digital experience built for a modern cloth boutique.
+        </p>
+        <div class="hero-actions">
+          <a href="#collections" class="primary-btn">Explore Collections</a>
+          <a href="#lookbook" class="secondary-btn">View Lookbook</a>
         </div>
+
+        <div class="hero-stats">
+          <article>
+            <strong>5000+</strong>
+            <span>Happy clients</span>
+          </article>
+          <article>
+            <strong>50+</strong>
+            <span>Fabric varieties</span>
+          </article>
+          <article>
+            <strong>3 Days</strong>
+            <span>Quick stitching available</span>
+          </article>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="floating-card main-card">
+          <span>New Arrival</span>
+          <h3>Festive Silk Edit</h3>
+          <p>Rich textures, elegant tones, tailored silhouettes.</p>
+        </div>
+        <div class="floating-card small-card top-right">
+          <span>Trending</span>
+          <h4>Summer Cotton</h4>
+        </div>
+        <div class="floating-card small-card bottom-left">
+          <span>Custom</span>
+          <h4>Stitch to Fit</h4>
+        </div>
+      </div>
     </section>
 
-    <footer id="contact">
-        <p>&copy; 2026 Tirumla Dresses | Follow us on Instagram | Preetham</p>
-    </footer>
+    <section class="marquee-strip">
+      <div class="marquee-track">
+        <span>Bridal Wear</span>
+        <span>Designer Blouses</span>
+        <span>Kids Wear</span>
+        <span>Premium Sarees</span>
+        <span>Custom Uniforms</span>
+        <span>Embroidery</span>
+        <span>Festive Collection</span>
+        <span>Alterations</span>
+      </div>
+    </section>
+
+    <section class="section" id="collections">
+      <div class="section-header">
+        <span class="eyebrow">Collections</span>
+        <h2>Choose your style story</h2>
+        <p>Browse curated categories with interactive filtering to match every occasion and preference.</p>
+      </div>
+
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ethnic">Ethnic</button>
+        <button class="filter-btn" data-filter="casual">Casual</button>
+        <button class="filter-btn" data-filter="bridal">Bridal</button>
+        <button class="filter-btn" data-filter="uniforms">Uniforms</button>
+      </div>
+
+      <div class="product-grid">
+        <article class="product-card" data-category="ethnic">
+          <div class="product-image gradient-1"></div>
+          <div class="product-content">
+            <span class="product-tag">Ethnic</span>
+            <h3>Royal Saree Edit</h3>
+            <p>Graceful drapes with rich borders and premium finishing.</p>
+            <div class="product-meta"><strong>₹2,499+</strong><button class="mini-btn quick-view" data-title="Royal Saree Edit" data-desc="Elegant saree collection with refined patterns, premium fall finishing, and boutique blouse customization.">Quick View</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="casual">
+          <div class="product-image gradient-2"></div>
+          <div class="product-content">
+            <span class="product-tag">Casual</span>
+            <h3>Everyday Cotton Sets</h3>
+            <p>Breathable comfort for office, travel, and all-day wear.</p>
+            <div class="product-meta"><strong>₹1,299+</strong><button class="mini-btn quick-view" data-title="Everyday Cotton Sets" data-desc="Soft cotton co-ords and stitched sets designed for comfortable everyday movement with premium boutique styling.">Quick View</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="bridal">
+          <div class="product-image gradient-3"></div>
+          <div class="product-content">
+            <span class="product-tag">Bridal</span>
+            <h3>Wedding Couture</h3>
+            <p>Intricate work, statement silhouettes, unforgettable presence.</p>
+            <div class="product-meta"><strong>₹9,999+</strong><button class="mini-btn quick-view" data-title="Wedding Couture" data-desc="Luxury bridal outfits with elegant handwork, fitting sessions, fabric consultation, and custom embellishment choices.">Quick View</button></div>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="uniforms">
+          <div class="product-image gradient-4"></div>
+          <div class="product-content">
+            <span class="product-tag">Uniforms</span>
+            <h3>Institutional Uniforms</h3>
+            <p>Polished, durable, branded solutions for schools and staff.</p>
+            <div class="product-meta"><strong>Bulk Pricing</strong><button class="mini-btn quick-view" data-title="Institutional Uniforms" data-desc="Durable uniform solutions with logo embroidery, size standardization, repeat orders, and dependable delivery timelines.">Quick View</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section feature-section" id="craftsmanship">
+      <div class="feature-layout">
+        <div>
+          <span class="eyebrow">Why choose us</span>
+          <h2>Craftsmanship that feels personal</h2>
+          <p>
+            From fabric consultation to final fitting, we combine design taste, tailoring precision, and boutique-level service for a memorable shopping journey.
+          </p>
+          <div class="feature-list">
+            <article>
+              <h3>Fabric-first selection</h3>
+              <p>Touch, feel, compare, and choose from premium silks, cottons, lycra, blends, and occasion fabrics.</p>
+            </article>
+            <article>
+              <h3>Custom stitching</h3>
+              <p>Personal measurements, alteration support, and styling guidance for the perfect boutique finish.</p>
+            </article>
+            <article>
+              <h3>Bulk + retail orders</h3>
+              <p>Serve individual shoppers, families, schools, hotels, clinics, and corporate teams in one place.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="glass-panel">
+          <h3>Style Finder</h3>
+          <p>Pick an occasion and mood to get a boutique recommendation.</p>
+          <div class="style-finder">
+            <select id="occasionSelect">
+              <option value="festive">Festive</option>
+              <option value="office">Office</option>
+              <option value="wedding">Wedding</option>
+              <option value="daily">Daily Wear</option>
+            </select>
+            <select id="moodSelect">
+              <option value="elegant">Elegant</option>
+              <option value="minimal">Minimal</option>
+              <option value="luxury">Luxury</option>
+              <option value="vibrant">Vibrant</option>
+            </select>
+            <button class="primary-btn full-width" id="styleSuggestBtn">Get Recommendation</button>
+            <div class="suggestion-box" id="suggestionBox">Choose preferences to receive a boutique suggestion.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section lookbook-section" id="lookbook">
+      <div class="section-header">
+        <span class="eyebrow">Lookbook</span>
+        <h2>Interactive visual showcase</h2>
+        <p>Preview how the boutique can present featured themes, seasonal ranges, and signature outfits.</p>
+      </div>
+
+      <div class="lookbook-grid">
+        <div class="lookbook-card tall gradient-5"><span>Elegant Evenings</span></div>
+        <div class="lookbook-card gradient-6"><span>Pastel Picks</span></div>
+        <div class="lookbook-card gradient-7"><span>Kids Celebration Wear</span></div>
+        <div class="lookbook-card wide gradient-8"><span>Signature Boutique Styling</span></div>
+      </div>
+    </section>
+
+    <section class="section appointment-section" id="appointment">
+      <div class="section-header left-align">
+        <span class="eyebrow">Appointment</span>
+        <h2>Book a consultation or trial visit</h2>
+        <p>Capture inquiries for custom stitching, bridal appointments, group orders, or boutique walk-ins.</p>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <div class="form-row">
+          <label>
+            Full Name
+            <input type="text" name="name" placeholder="Enter your name" required>
+          </label>
+          <label>
+            Phone Number
+            <input type="tel" name="phone" placeholder="Enter mobile number" required>
+          </label>
+        </div>
+
+        <div class="form-row">
+          <label>
+            Service Type
+            <select name="service" required>
+              <option value="Custom Stitching">Custom Stitching</option>
+              <option value="Bridal Consultation">Bridal Consultation</option>
+              <option value="Uniform Order">Uniform Order</option>
+              <option value="General Visit">General Visit</option>
+            </select>
+          </label>
+          <label>
+            Preferred Date
+            <input type="date" name="date" required>
+          </label>
+        </div>
+
+        <label>
+          Notes
+          <textarea name="notes" rows="4" placeholder="Tell us your requirement, occasion, colors, quantity, or preferred fitting details"></textarea>
+        </label>
+
+        <button type="submit" class="primary-btn">Submit Appointment</button>
+        <p class="form-status" id="formStatus"></p>
+      </form>
+    </section>
+
+    <section class="section testimonials-section" id="testimonials">
+      <div class="section-header">
+        <span class="eyebrow">Testimonials</span>
+        <h2>What customers love about the boutique</h2>
+      </div>
+
+      <div class="testimonial-slider">
+        <button class="slider-btn" id="prevTestimonial">‹</button>
+        <div class="testimonial-card" id="testimonialCard">
+          <p class="quote">“The fitting, finishing, and fabric quality were excellent. They understood exactly what style I wanted and delivered it beautifully.”</p>
+          <div class="author">
+            <strong>Shreya R.</strong>
+            <span>Bridal Client</span>
+          </div>
+        </div>
+        <button class="slider-btn" id="nextTestimonial">›</button>
+      </div>
+    </section>
+
+    <section class="section faq-section">
+      <div class="section-header">
+        <span class="eyebrow">FAQs</span>
+        <h2>Common questions</h2>
+      </div>
+
+      <div class="faq-list">
+        <article class="faq-item active">
+          <button class="faq-question">Do you offer custom measurements and alterations?<span>+</span></button>
+          <div class="faq-answer"><p>Yes. We provide custom measurements, trial fittings, and alteration support for individual and group orders.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question">Can I place bulk uniform orders for institutions?<span>+</span></button>
+          <div class="faq-answer"><p>Yes. We handle schools, hotels, hospitals, office teams, and other organizations with branding options and repeated supply support.</p></div>
+        </article>
+        <article class="faq-item">
+          <button class="faq-question">How long does stitching usually take?<span>+</span></button>
+          <div class="faq-answer"><p>Standard stitching timelines vary by design and quantity, but urgent delivery may also be available based on workload.</p></div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div>
+      <h3>Tirumala Boutique</h3>
+      <p>Fashion crafted with elegance, comfort, and confidence.</p>
+    </div>
+    <div>
+      <strong>Contact</strong>
+      <p>Guntur, Andhra Pradesh</p>
+      <p>+91 90000 00000</p>
+      <p>hello@tirumalaboutique.com</p>
+    </div>
+    <div>
+      <strong>Hours</strong>
+      <p>Mon - Sat: 10:00 AM to 8:30 PM</p>
+      <p>Sunday: By Appointment</p>
+    </div>
+  </footer>
+
+  <div class="modal" id="quickViewModal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">✕</button>
+      <span class="eyebrow">Collection Detail</span>
+      <h3 id="modalTitle">Title</h3>
+      <p id="modalDescription">Description</p>
+      <a href="#appointment" class="primary-btn modal-btn">Book for This Style</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
