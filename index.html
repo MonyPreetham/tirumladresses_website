@@ -3,342 +3,307 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tirumala Boutique | Elegant Clothing & Custom Stitching</title>
-  <meta name="description" content="Modern interactive boutique website for premium ethnic, casual, and uniform clothing with custom stitching, collections, offers, and appointments." />
+  <title>Tirumala Dresses | Premium Uniform Boutique</title>
+  <meta name="description" content="Tirumala Dresses - premium stitched uniforms for schools, hospitals, hotels, colleges and corporate organizations." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="cursor-glow"></div>
+  <div class="topbar">Since 1960 • Premium Uniform Boutique • Custom Stitching • Embroidery • Bulk Orders</div>
 
-  <header class="topbar">
-    <div class="brand-wrap">
-      <div class="brand-mark">TB</div>
-      <div>
-        <h1>Tirumala Boutique</h1>
-        <p>Premium fabrics, custom fits, timeless style</p>
-      </div>
-    </div>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="brand" href="#top">
+        <div class="brand-mark">TD</div>
+        <div>
+          <div class="brand-name">TIRUMALA DRESSES</div>
+          <div class="brand-sub">6th Line, Main Road, Arundelpet, Guntur, Andhra Pradesh 522002</div>
+        </div>
+      </a>
 
-    <nav class="desktop-nav">
-      <a href="#home">Home</a>
-      <a href="#collections">Collections</a>
-      <a href="#craftsmanship">Craftsmanship</a>
-      <a href="#lookbook">Lookbook</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#contact">Contact</a>
-    </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
 
-    <div class="nav-actions">
-      <button class="ghost-btn" id="themeToggle" aria-label="Toggle theme">◐</button>
-      <button class="ghost-btn mobile-toggle" id="mobileToggle" aria-label="Open menu">☰</button>
-      <a class="primary-btn" href="#appointment">Book Visit</a>
+      <nav class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact Info</a>
+      </nav>
     </div>
   </header>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#home">Home</a>
-    <a href="#collections">Collections</a>
-    <a href="#craftsmanship">Craftsmanship</a>
-    <a href="#lookbook">Lookbook</a>
-    <a href="#testimonials">Testimonials</a>
-    <a href="#contact">Contact</a>
-  </div>
-
   <main>
     <section class="hero" id="home">
-      <div class="hero-copy">
-        <span class="eyebrow">Boutique clothing experience</span>
-        <h2>Where every fabric becomes a signature style.</h2>
-        <p>
-          Discover handcrafted ethnic wear, elegant daily outfits, festive collections, and custom tailoring with an immersive digital experience built for a modern cloth boutique.
-        </p>
-        <div class="hero-actions">
-          <a href="#collections" class="primary-btn">Explore Collections</a>
-          <a href="#lookbook" class="secondary-btn">View Lookbook</a>
-        </div>
-
-        <div class="hero-stats">
-          <article>
-            <strong>5000+</strong>
-            <span>Happy clients</span>
-          </article>
-          <article>
-            <strong>50+</strong>
-            <span>Fabric varieties</span>
-          </article>
-          <article>
-            <strong>3 Days</strong>
-            <span>Quick stitching available</span>
-          </article>
-        </div>
-      </div>
-
-      <div class="hero-visual">
-        <div class="floating-card main-card">
-          <span>New Arrival</span>
-          <h3>Festive Silk Edit</h3>
-          <p>Rich textures, elegant tones, tailored silhouettes.</p>
-        </div>
-        <div class="floating-card small-card top-right">
-          <span>Trending</span>
-          <h4>Summer Cotton</h4>
-        </div>
-        <div class="floating-card small-card bottom-left">
-          <span>Custom</span>
-          <h4>Stitch to Fit</h4>
-        </div>
-      </div>
-    </section>
-
-    <section class="marquee-strip">
-      <div class="marquee-track">
-        <span>Bridal Wear</span>
-        <span>Designer Blouses</span>
-        <span>Kids Wear</span>
-        <span>Premium Sarees</span>
-        <span>Custom Uniforms</span>
-        <span>Embroidery</span>
-        <span>Festive Collection</span>
-        <span>Alterations</span>
-      </div>
-    </section>
-
-    <section class="section" id="collections">
-      <div class="section-header">
-        <span class="eyebrow">Collections</span>
-        <h2>Choose your style story</h2>
-        <p>Browse curated categories with interactive filtering to match every occasion and preference.</p>
-      </div>
-
-      <div class="filter-bar">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="ethnic">Ethnic</button>
-        <button class="filter-btn" data-filter="casual">Casual</button>
-        <button class="filter-btn" data-filter="bridal">Bridal</button>
-        <button class="filter-btn" data-filter="uniforms">Uniforms</button>
-      </div>
-
-      <div class="product-grid">
-        <article class="product-card" data-category="ethnic">
-          <div class="product-image gradient-1"></div>
-          <div class="product-content">
-            <span class="product-tag">Ethnic</span>
-            <h3>Royal Saree Edit</h3>
-            <p>Graceful drapes with rich borders and premium finishing.</p>
-            <div class="product-meta"><strong>₹2,499+</strong><button class="mini-btn quick-view" data-title="Royal Saree Edit" data-desc="Elegant saree collection with refined patterns, premium fall finishing, and boutique blouse customization.">Quick View</button></div>
-          </div>
-        </article>
-
-        <article class="product-card" data-category="casual">
-          <div class="product-image gradient-2"></div>
-          <div class="product-content">
-            <span class="product-tag">Casual</span>
-            <h3>Everyday Cotton Sets</h3>
-            <p>Breathable comfort for office, travel, and all-day wear.</p>
-            <div class="product-meta"><strong>₹1,299+</strong><button class="mini-btn quick-view" data-title="Everyday Cotton Sets" data-desc="Soft cotton co-ords and stitched sets designed for comfortable everyday movement with premium boutique styling.">Quick View</button></div>
-          </div>
-        </article>
-
-        <article class="product-card" data-category="bridal">
-          <div class="product-image gradient-3"></div>
-          <div class="product-content">
-            <span class="product-tag">Bridal</span>
-            <h3>Wedding Couture</h3>
-            <p>Intricate work, statement silhouettes, unforgettable presence.</p>
-            <div class="product-meta"><strong>₹9,999+</strong><button class="mini-btn quick-view" data-title="Wedding Couture" data-desc="Luxury bridal outfits with elegant handwork, fitting sessions, fabric consultation, and custom embellishment choices.">Quick View</button></div>
-          </div>
-        </article>
-
-        <article class="product-card" data-category="uniforms">
-          <div class="product-image gradient-4"></div>
-          <div class="product-content">
-            <span class="product-tag">Uniforms</span>
-            <h3>Institutional Uniforms</h3>
-            <p>Polished, durable, branded solutions for schools and staff.</p>
-            <div class="product-meta"><strong>Bulk Pricing</strong><button class="mini-btn quick-view" data-title="Institutional Uniforms" data-desc="Durable uniform solutions with logo embroidery, size standardization, repeat orders, and dependable delivery timelines.">Quick View</button></div>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section feature-section" id="craftsmanship">
-      <div class="feature-layout">
-        <div>
-          <span class="eyebrow">Why choose us</span>
-          <h2>Craftsmanship that feels personal</h2>
-          <p>
-            From fabric consultation to final fitting, we combine design taste, tailoring precision, and boutique-level service for a memorable shopping journey.
+      <div class="hero-overlay"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">One place for all professional uniforms</p>
+          <h1>We dress every profession with pride and excellence.</h1>
+          <p class="hero-text">
+            Tirumala Dresses specializes in high-quality stitched uniforms for schools, colleges, hospitals, hotels,
+            kitchens, private staff, and corporate organizations. I developed this experience around your wireframe,
+            and i used a premium boutique-style visual language inspired by luxury textile stores, with the requested
+            red theme replacing green.
           </p>
-          <div class="feature-list">
-            <article>
-              <h3>Fabric-first selection</h3>
-              <p>Touch, feel, compare, and choose from premium silks, cottons, lycra, blends, and occasion fabrics.</p>
-            </article>
-            <article>
-              <h3>Custom stitching</h3>
-              <p>Personal measurements, alteration support, and styling guidance for the perfect boutique finish.</p>
-            </article>
-            <article>
-              <h3>Bulk + retail orders</h3>
-              <p>Serve individual shoppers, families, schools, hotels, clinics, and corporate teams in one place.</p>
-            </article>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Explore Collections</a>
+            <a href="#contact" class="btn btn-secondary">Get Quotation</a>
           </div>
         </div>
 
-        <div class="glass-panel">
-          <h3>Style Finder</h3>
-          <p>Pick an occasion and mood to get a boutique recommendation.</p>
-          <div class="style-finder">
-            <select id="occasionSelect">
-              <option value="festive">Festive</option>
-              <option value="office">Office</option>
-              <option value="wedding">Wedding</option>
-              <option value="daily">Daily Wear</option>
-            </select>
-            <select id="moodSelect">
-              <option value="elegant">Elegant</option>
-              <option value="minimal">Minimal</option>
-              <option value="luxury">Luxury</option>
-              <option value="vibrant">Vibrant</option>
-            </select>
-            <button class="primary-btn full-width" id="styleSuggestBtn">Get Recommendation</button>
-            <div class="suggestion-box" id="suggestionBox">Choose preferences to receive a boutique suggestion.</div>
+        <div class="hero-cards">
+          <div class="floating-card small">
+            <span>Trusted by schools & businesses</span>
+            <strong>Since 1960</strong>
+          </div>
+          <div class="floating-card large">
+            <h3>Premium tailoring</h3>
+            <p>Custom logo embroidery, branded stitching, durable fabrics, ready-made and made-to-measure uniforms.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section lookbook-section" id="lookbook">
-      <div class="section-header">
-        <span class="eyebrow">Lookbook</span>
-        <h2>Interactive visual showcase</h2>
-        <p>Preview how the boutique can present featured themes, seasonal ranges, and signature outfits.</p>
-      </div>
-
-      <div class="lookbook-grid">
-        <div class="lookbook-card tall gradient-5"><span>Elegant Evenings</span></div>
-        <div class="lookbook-card gradient-6"><span>Pastel Picks</span></div>
-        <div class="lookbook-card gradient-7"><span>Kids Celebration Wear</span></div>
-        <div class="lookbook-card wide gradient-8"><span>Signature Boutique Styling</span></div>
+    <section class="features-intro">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <h3>Premium Fabrics</h3>
+          <p>Comfortable, durable, imported and everyday-wear options.</p>
+        </div>
+        <div class="stat-card">
+          <h3>Expert Tailoring</h3>
+          <p>Professional cutting, fitting, stitching and finishing for all sizes.</p>
+        </div>
+        <div class="stat-card">
+          <h3>Bulk Supply</h3>
+          <p>Reliable uniform fulfillment for institutions and businesses.</p>
+        </div>
+        <div class="stat-card">
+          <h3>Customization</h3>
+          <p>Logo embroidery, styling tweaks, color matching and quick processing.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section appointment-section" id="appointment">
-      <div class="section-header left-align">
-        <span class="eyebrow">Appointment</span>
-        <h2>Book a consultation or trial visit</h2>
-        <p>Capture inquiries for custom stitching, bridal appointments, group orders, or boutique walk-ins.</p>
+    <section class="section collections" id="products">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Industries we serve</p>
+          <h2>Premium quality uniforms for every profession</h2>
+        </div>
+
+        <div class="filter-row">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="school">School</button>
+          <button class="filter-btn" data-filter="college">College</button>
+          <button class="filter-btn" data-filter="medical">Medical</button>
+          <button class="filter-btn" data-filter="hotel">Hotel</button>
+          <button class="filter-btn" data-filter="corporate">Corporate</button>
+          <button class="filter-btn" data-filter="kitchen">Kitchen</button>
+        </div>
+
+        <div class="collection-grid">
+          <article class="collection-card" data-category="school">
+            <div class="collection-image gradient-1"></div>
+            <div class="collection-content">
+              <h3>School Uniforms</h3>
+              <p>Shirts, pants, skirts, belts, sportswear and complete institution-ready sets.</p>
+              <button class="mini-link" data-modal="School uniforms with stitched sets, sports uniforms, belts, sweaters and bulk school supply packages.">Quick View</button>
+            </div>
+          </article>
+
+          <article class="collection-card" data-category="college">
+            <div class="collection-image gradient-2"></div>
+            <div class="collection-content">
+              <h3>College Coats & Aprons</h3>
+              <p>Lab coats, aprons and formal wear tailored for colleges and professional institutes.</p>
+              <button class="mini-link" data-modal="College coats, aprons, ID-ready formal uniforms and department-based customization.">Quick View</button>
+            </div>
+          </article>
+
+          <article class="collection-card" data-category="medical">
+            <div class="collection-image gradient-3"></div>
+            <div class="collection-content">
+              <h3>Medical Uniforms</h3>
+              <p>Aprons, scrubs, doctor coats and staff wear made for long daily use.</p>
+              <button class="mini-link" data-modal="Medical uniforms including scrubs, nursing sets, aprons and doctor coats with logo embroidery.">Quick View</button>
+            </div>
+          </article>
+
+          <article class="collection-card" data-category="hotel">
+            <div class="collection-image gradient-4"></div>
+            <div class="collection-content">
+              <h3>Hotel Uniforms</h3>
+              <p>Front-office, service, housekeeping and restaurant staff uniforms.</p>
+              <button class="mini-link" data-modal="Hotel and restaurant uniforms for front desk, housekeeping, service teams and hospitality staff.">Quick View</button>
+            </div>
+          </article>
+
+          <article class="collection-card" data-category="corporate">
+            <div class="collection-image gradient-5"></div>
+            <div class="collection-content">
+              <h3>Corporate Blazers & Formals</h3>
+              <p>Sharp formal shirts, blazers and polished presentation uniforms.</p>
+              <button class="mini-link" data-modal="Corporate blazers, formal shirts, trousers and office-ready uniform programs.">Quick View</button>
+            </div>
+          </article>
+
+          <article class="collection-card" data-category="hotel kitchen">
+            <div class="collection-image gradient-6"></div>
+            <div class="collection-content">
+              <h3>Kitchen & Staff Uniforms</h3>
+              <p>Chef coats, kitchen aprons, pantry wear and private staff uniform options.</p>
+              <button class="mini-link" data-modal="Kitchen, chef, pantry and private staff uniforms with durable stain-friendly fabrics.">Quick View</button>
+            </div>
+          </article>
+        </div>
       </div>
-
-      <form class="booking-form" id="bookingForm">
-        <div class="form-row">
-          <label>
-            Full Name
-            <input type="text" name="name" placeholder="Enter your name" required>
-          </label>
-          <label>
-            Phone Number
-            <input type="tel" name="phone" placeholder="Enter mobile number" required>
-          </label>
-        </div>
-
-        <div class="form-row">
-          <label>
-            Service Type
-            <select name="service" required>
-              <option value="Custom Stitching">Custom Stitching</option>
-              <option value="Bridal Consultation">Bridal Consultation</option>
-              <option value="Uniform Order">Uniform Order</option>
-              <option value="General Visit">General Visit</option>
-            </select>
-          </label>
-          <label>
-            Preferred Date
-            <input type="date" name="date" required>
-          </label>
-        </div>
-
-        <label>
-          Notes
-          <textarea name="notes" rows="4" placeholder="Tell us your requirement, occasion, colors, quantity, or preferred fitting details"></textarea>
-        </label>
-
-        <button type="submit" class="primary-btn">Submit Appointment</button>
-        <p class="form-status" id="formStatus"></p>
-      </form>
     </section>
 
-    <section class="section testimonials-section" id="testimonials">
-      <div class="section-header">
-        <span class="eyebrow">Testimonials</span>
-        <h2>What customers love about the boutique</h2>
-      </div>
+    <section class="section why-us" id="about">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Why choose Tirumala Dresses</p>
+          <h2>Craftsmanship that matches your wireframe vision</h2>
+        </div>
 
-      <div class="testimonial-slider">
-        <button class="slider-btn" id="prevTestimonial">‹</button>
-        <div class="testimonial-card" id="testimonialCard">
-          <p class="quote">“The fitting, finishing, and fabric quality were excellent. They understood exactly what style I wanted and delivered it beautifully.”</p>
-          <div class="author">
-            <strong>Shreya R.</strong>
-            <span>Bridal Client</span>
+        <div class="benefits-grid">
+          <div class="benefit">No.1 quality fabrics</div>
+          <div class="benefit">High-end branded stitching</div>
+          <div class="benefit">Custom on-time embroidery</div>
+          <div class="benefit">Bulk uniform supply for institutions</div>
+          <div class="benefit">Comfortable and durable materials</div>
+          <div class="benefit">Professional tailoring and finishing</div>
+          <div class="benefit">Affordable pricing for bulk orders</div>
+          <div class="benefit">Wide range of uniform designs</div>
+          <div class="benefit">Perfect fit with accurate measurements</div>
+          <div class="benefit">Premium imported fabric options</div>
+          <div class="benefit">Trusted by schools and businesses</div>
+          <div class="benefit">Fast order processing</div>
+          <div class="benefit">Attention to detail in every stitch</div>
+          <div class="benefit">Customer satisfaction guaranteed</div>
+          <div class="benefit">Ready-made and custom options</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story">
+      <div class="container story-grid">
+        <div>
+          <p class="eyebrow">Our journey</p>
+          <h2>From a small-scale tailoring setup to a trusted uniform destination</h2>
+        </div>
+        <div>
+          <p>
+            Tirumala Dresses grew through dedication, discipline and years of customer trust. What started as a focused
+            local tailoring effort expanded into a professional uniform boutique serving multiple industries with better
+            finishing, dependable delivery and premium material choices.
+          </p>
+          <p>
+            I worked your homepage structure into this layout so it feels premium like the reference site, while still
+            staying true to your business identity and the sketch you attached.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Gallery</p>
+          <h2>Visual boutique-style presentation</h2>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-card tall gradient-7"><span>Luxury Uniform Display</span></div>
+          <div class="gallery-card gradient-8"><span>School Sets</span></div>
+          <div class="gallery-card gradient-9"><span>Medical Aprons</span></div>
+          <div class="gallery-card gradient-10"><span>Corporate Formals</span></div>
+          <div class="gallery-card wide gradient-11"><span>Hotel & Restaurant Styling</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section testimonials">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Customer trust</p>
+          <h2>What institutions appreciate most</h2>
+        </div>
+        <div class="testimonial-slider">
+          <div class="testimonial active">
+            <p>“Excellent stitching quality and neat finishing. Our school uniforms came exactly as expected.”</p>
+            <span>— School Management Team</span>
+          </div>
+          <div class="testimonial">
+            <p>“Professional tailoring, quick logo embroidery and good fabric options for our staff uniforms.”</p>
+            <span>— Hospitality Client</span>
+          </div>
+          <div class="testimonial">
+            <p>“Reliable bulk order support with proper measurements and consistent fit across departments.”</p>
+            <span>— Corporate Buyer</span>
           </div>
         </div>
-        <button class="slider-btn" id="nextTestimonial">›</button>
       </div>
     </section>
 
-    <section class="section faq-section">
-      <div class="section-header">
-        <span class="eyebrow">FAQs</span>
-        <h2>Common questions</h2>
-      </div>
-
-      <div class="faq-list">
-        <article class="faq-item active">
-          <button class="faq-question">Do you offer custom measurements and alterations?<span>+</span></button>
-          <div class="faq-answer"><p>Yes. We provide custom measurements, trial fittings, and alteration support for individual and group orders.</p></div>
-        </article>
-        <article class="faq-item">
-          <button class="faq-question">Can I place bulk uniform orders for institutions?<span>+</span></button>
-          <div class="faq-answer"><p>Yes. We handle schools, hotels, hospitals, office teams, and other organizations with branding options and repeated supply support.</p></div>
-        </article>
-        <article class="faq-item">
-          <button class="faq-question">How long does stitching usually take?<span>+</span></button>
-          <div class="faq-answer"><p>Standard stitching timelines vary by design and quantity, but urgent delivery may also be available based on workload.</p></div>
-        </article>
+    <section class="section cta">
+      <div class="container cta-box">
+        <div>
+          <p class="eyebrow">Call us to get quotation for your business</p>
+          <h2>Need uniforms for your institution or company?</h2>
+        </div>
+        <a href="#contact" class="btn btn-primary">Request a Quote</a>
       </div>
     </section>
   </main>
 
-  <footer class="footer" id="contact">
-    <div>
-      <h3>Tirumala Boutique</h3>
-      <p>Fashion crafted with elegance, comfort, and confidence.</p>
-    </div>
-    <div>
-      <strong>Contact</strong>
-      <p>Guntur, Andhra Pradesh</p>
-      <p>+91 90000 00000</p>
-      <p>hello@tirumalaboutique.com</p>
-    </div>
-    <div>
-      <strong>Hours</strong>
-      <p>Mon - Sat: 10:00 AM to 8:30 PM</p>
-      <p>Sunday: By Appointment</p>
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h3>TIRUMALA DRESSES</h3>
+        <p>6th Line, Main Road<br>Arundelpet, Guntur - 522002</p>
+        <p>Contact: 9848 234016</p>
+      </div>
+      <div>
+        <h4>Why us</h4>
+        <ul>
+          <li>Trusted by schools & businesses</li>
+          <li>High quality fabrics</li>
+          <li>Available for all sizes</li>
+          <li>Customization & logo work</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#top">Store</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get a quotation</h4>
+        <form class="quote-form">
+          <input type="text" placeholder="Your Name" />
+          <input type="text" placeholder="Business / School Name" />
+          <input type="tel" placeholder="Phone Number" />
+          <textarea rows="4" placeholder="Tell us what uniforms you need"></textarea>
+          <button type="submit" class="btn btn-primary">Send Inquiry</button>
+        </form>
+      </div>
     </div>
   </footer>
 
-  <div class="modal" id="quickViewModal" aria-hidden="true">
+  <div class="modal" id="quickModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
     <div class="modal-content">
-      <button class="modal-close" id="modalClose">✕</button>
-      <span class="eyebrow">Collection Detail</span>
-      <h3 id="modalTitle">Title</h3>
-      <p id="modalDescription">Description</p>
-      <a href="#appointment" class="primary-btn modal-btn">Book for This Style</a>
+      <button class="modal-close" aria-label="Close">×</button>
+      <h3>Collection Details</h3>
+      <p id="modalText"></p>
     </div>
   </div>
 
