@@ -3,310 +3,1236 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tirumala Dresses | Premium Uniform Boutique</title>
-  <meta name="description" content="Tirumala Dresses - premium stitched uniforms for schools, hospitals, hotels, colleges and corporate organizations." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+  <title>Tirumala Dresses | Since 1960</title>
+  <meta
+    name="description"
+    content="Tirumala Dresses - Premium stitched uniforms for schools, colleges, hospitals, hotels, restaurants, and corporate organizations in Guntur."
+  />
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    :root {
+      --primary-red: #9b111e;
+      --deep-red: #6e0d17;
+      --gold: #d4af37;
+      --gold-soft: #f2df9b;
+      --cream: #f8f1e3;
+      --white: #ffffff;
+      --text-dark: #2b1b12;
+      --text-muted: #6d5b50;
+      --border-light: rgba(212, 175, 55, 0.35);
+      --shadow: 0 10px 30px rgba(43, 27, 18, 0.12);
+      --radius: 16px;
+      --transition: all 0.3s ease;
+      --max-width: 1240px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: var(--text-dark);
+      background: var(--cream);
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .container {
+      width: min(92%, var(--max-width));
+      margin: 0 auto;
+    }
+
+    .section {
+      padding: 80px 0;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      color: var(--deep-red);
+      text-align: center;
+      margin-bottom: 14px;
+      line-height: 1.2;
+    }
+
+    .section-subtitle {
+      max-width: 760px;
+      margin: 0 auto 48px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    .gold-line {
+      width: 110px;
+      height: 3px;
+      background: linear-gradient(to right, transparent, var(--gold), transparent);
+      margin: 0 auto 18px;
+      border-radius: 999px;
+    }
+
+    .topbar {
+      background: var(--deep-red);
+      color: var(--cream);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.92rem;
+    }
+
+    .topbar-inner {
+      min-height: 44px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      flex-wrap: wrap;
+      padding: 8px 0;
+    }
+
+    .topbar-left,
+    .topbar-right {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .topbar span {
+      opacity: 0.95;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(110, 13, 23, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.18);
+    }
+
+    .navbar {
+      min-height: 84px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      min-width: 0;
+    }
+
+    .brand-logo {
+      width: 58px;
+      height: 58px;
+      object-fit: contain;
+      border-radius: 12px;
+      background: rgba(255,255,255,0.08);
+      padding: 6px;
+      box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.15);
+    }
+
+    .brand-text h1 {
+      font-family: "Playfair Display", serif;
+      color: var(--white);
+      font-size: clamp(1.45rem, 2vw, 2rem);
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+    }
+
+    .brand-text p {
+      color: var(--gold-soft);
+      font-size: 0.88rem;
+      margin-top: 4px;
+      letter-spacing: 0.9px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .nav-links a {
+      color: var(--white);
+      font-weight: 500;
+      position: relative;
+      transition: var(--transition);
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -6px;
+      width: 0;
+      height: 2px;
+      background: var(--gold);
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-soft);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 13px 24px;
+      border-radius: 999px;
+      font-weight: 600;
+      transition: var(--transition);
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold), #f0c95b);
+      color: var(--deep-red);
+      box-shadow: 0 10px 24px rgba(212, 175, 55, 0.28);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 28px rgba(212, 175, 55, 0.34);
+    }
+
+    .btn-outline {
+      border-color: rgba(255,255,255,0.4);
+      color: var(--white);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--gold);
+      color: var(--gold-soft);
+      transform: translateY(-2px);
+    }
+
+    .menu-toggle {
+      display: none;
+      background: transparent;
+      border: none;
+      color: var(--white);
+      font-size: 1.6rem;
+      cursor: pointer;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top left, rgba(212, 175, 55, 0.18), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(155, 17, 30, 0.12), transparent 26%),
+        linear-gradient(135deg, #fff8eb 0%, #f8f1e3 55%, #f3e7cb 100%);
+      padding: 90px 0 70px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 42px;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(212, 175, 55, 0.16);
+      color: var(--deep-red);
+      font-weight: 600;
+      border: 1px solid rgba(212, 175, 55, 0.36);
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.5rem, 5vw, 4.8rem);
+      line-height: 1.08;
+      color: var(--deep-red);
+      margin-bottom: 18px;
+    }
+
+    .hero h2 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.08rem;
+      max-width: 650px;
+      margin-bottom: 28px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 30px;
+    }
+
+    .hero-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-highlights span {
+      background: var(--white);
+      color: var(--text-dark);
+      padding: 10px 14px;
+      border-radius: 999px;
+      box-shadow: var(--shadow);
+      font-size: 0.92rem;
+      border: 1px solid rgba(212, 175, 55, 0.22);
+    }
+
+    .hero-card {
+      position: relative;
+      background: linear-gradient(180deg, var(--deep-red), var(--primary-red));
+      border-radius: 28px;
+      padding: 36px;
+      box-shadow: 0 25px 60px rgba(110, 13, 23, 0.28);
+      overflow: hidden;
+      min-height: 520px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 1px solid rgba(212, 175, 55, 0.18);
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 220px;
+      background: rgba(212, 175, 55, 0.18);
+      border-radius: 50%;
+      top: -60px;
+      right: -60px;
+      filter: blur(6px);
+    }
+
+    .hero-card::after {
+      content: "";
+      position: absolute;
+      width: 180px;
+      height: 180px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+      bottom: -50px;
+      left: -40px;
+    }
+
+    .hero-logo {
+      position: relative;
+      z-index: 1;
+      width: 110px;
+      margin-bottom: 18px;
+      filter: drop-shadow(0 10px 18px rgba(0,0,0,0.18));
+    }
+
+    .hero-card-content {
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-card h3 {
+      font-family: "Playfair Display", serif;
+      color: var(--white);
+      font-size: 2rem;
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .hero-card p {
+      color: rgba(255,255,255,0.84);
+      margin-bottom: 24px;
+    }
+
+    .hero-card-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .mini-card {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: var(--white);
+      padding: 16px;
+      border-radius: 16px;
+      backdrop-filter: blur(6px);
+    }
+
+    .mini-card strong {
+      display: block;
+      color: var(--gold-soft);
+      margin-bottom: 4px;
+      font-size: 1rem;
+    }
+
+    .about-preview {
+      background: var(--white);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 36px;
+      align-items: center;
+    }
+
+    .about-card {
+      background: linear-gradient(180deg, #fffefb, #fff8eb);
+      border: 1px solid var(--border-light);
+      border-radius: 24px;
+      padding: 34px;
+      box-shadow: var(--shadow);
+    }
+
+    .about-card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 2rem;
+      color: var(--deep-red);
+      margin-bottom: 16px;
+    }
+
+    .about-card p {
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .about-points {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .about-points li {
+      background: var(--cream);
+      padding: 14px 16px;
+      border-radius: 14px;
+      border-left: 4px solid var(--gold);
+      color: var(--text-dark);
+      font-weight: 500;
+    }
+
+    .about-story {
+      background: linear-gradient(135deg, var(--deep-red), var(--primary-red));
+      color: var(--white);
+      border-radius: 24px;
+      padding: 36px;
+      min-height: 100%;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(110, 13, 23, 0.24);
+    }
+
+    .about-story::after {
+      content: "Since 1960";
+      position: absolute;
+      right: -8px;
+      bottom: 12px;
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.4rem, 6vw, 4.6rem);
+      color: rgba(255,255,255,0.08);
+      transform: rotate(-7deg);
+      pointer-events: none;
+    }
+
+    .about-story h4 {
+      font-family: "Playfair Display", serif;
+      font-size: 1.8rem;
+      margin-bottom: 16px;
+      color: var(--gold-soft);
+    }
+
+    .about-story p {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 14px;
+    }
+
+    .industries {
+      background:
+        linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),
+        linear-gradient(135deg, #f5ead0, #f8f1e3);
+    }
+
+    .industries-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px;
+    }
+
+    .industry-card {
+      background: var(--white);
+      border-radius: 20px;
+      padding: 28px 22px;
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow);
+      text-align: center;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .industry-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(212,175,55,0.08), transparent);
+      opacity: 0;
+      transition: var(--transition);
+    }
+
+    .industry-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(155, 17, 30, 0.18);
+    }
+
+    .industry-card:hover::before {
+      opacity: 1;
+    }
+
+    .industry-icon {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      display: grid;
+      place-items: center;
+      font-size: 1.5rem;
+      color: var(--deep-red);
+      background: linear-gradient(135deg, #fff2c5, #f7e2a5);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      position: relative;
+      z-index: 1;
+    }
+
+    .industry-card h3 {
+      font-family: "Playfair Display", serif;
+      color: var(--deep-red);
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .industry-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      position: relative;
+      z-index: 1;
+    }
+
+    .features {
+      background: var(--white);
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .feature-card {
+      border-radius: 22px;
+      padding: 26px 24px;
+      background: linear-gradient(180deg, #fffefb, #fff8ea);
+      border: 1px solid var(--border-light);
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+    }
+
+    .feature-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 34px rgba(43, 27, 18, 0.12);
+    }
+
+    .feature-top {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
+    .feature-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      display: grid;
+      place-items: center;
+      background: linear-gradient(135deg, var(--primary-red), var(--deep-red));
+      color: var(--gold-soft);
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+
+    .feature-card h3 {
+      font-family: "Playfair Display", serif;
+      color: var(--deep-red);
+      font-size: 1.45rem;
+    }
+
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 0.97rem;
+    }
+
+    .cta {
+      background:
+        linear-gradient(rgba(110, 13, 23, 0.9), rgba(155, 17, 30, 0.92)),
+        linear-gradient(135deg, var(--deep-red), var(--primary-red));
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta::before,
+    .cta::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(212, 175, 55, 0.12);
+      pointer-events: none;
+    }
+
+    .cta::before {
+      width: 280px;
+      height: 280px;
+      top: -80px;
+      right: -60px;
+    }
+
+    .cta::after {
+      width: 220px;
+      height: 220px;
+      bottom: -80px;
+      left: -60px;
+    }
+
+    .cta-box {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .cta-box h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      margin-bottom: 16px;
+      color: var(--white);
+    }
+
+    .cta-box p {
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 28px;
+      font-size: 1.06rem;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .footer {
+      background: #2d0d12;
+      color: rgba(255,255,255,0.82);
+      padding-top: 70px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr 1fr;
+      gap: 28px;
+      padding-bottom: 40px;
+    }
+
+    .footer-brand {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+    }
+
+    .footer-brand img {
+      width: 62px;
+      height: 62px;
+      object-fit: contain;
+      background: rgba(255,255,255,0.06);
+      padding: 6px;
+      border-radius: 12px;
+    }
+
+    .footer h3,
+    .footer h4 {
+      color: var(--gold-soft);
+      margin-bottom: 14px;
+      font-family: "Playfair Display", serif;
+    }
+
+    .footer p,
+    .footer li,
+    .footer a {
+      color: rgba(255,255,255,0.78);
+      font-size: 0.96rem;
+      margin-bottom: 8px;
+    }
+
+    .footer a:hover {
+      color: var(--gold-soft);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding: 18px 0 24px;
+      text-align: center;
+      color: rgba(255,255,255,0.66);
+      font-size: 0.92rem;
+    }
+
+    .scroll-top {
+      position: fixed;
+      right: 22px;
+      bottom: 22px;
+      width: 48px;
+      height: 48px;
+      border: none;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), #f0c95b);
+      color: var(--deep-red);
+      font-size: 1.2rem;
+      cursor: pointer;
+      box-shadow: 0 14px 28px rgba(212, 175, 55, 0.3);
+      display: none;
+      z-index: 1001;
+    }
+
+    .scroll-top.show {
+      display: grid;
+      place-items: center;
+    }
+
+    @media (max-width: 1100px) {
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .industries-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .feature-grid,
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 860px) {
+      .menu-toggle {
+        display: inline-block;
+      }
+
+      .nav-links,
+      .nav-actions .btn-outline {
+        display: none;
+      }
+
+      .navbar {
+        position: relative;
+      }
+
+      .nav-links.mobile-open {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 0;
+        right: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+        background: var(--deep-red);
+        padding: 22px;
+        border-radius: 18px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.18);
+        border: 1px solid rgba(212, 175, 55, 0.16);
+      }
+
+      .hero-card {
+        min-height: auto;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .section {
+        padding: 64px 0;
+      }
+
+      .topbar-inner,
+      .topbar-left,
+      .topbar-right {
+        justify-content: center;
+      }
+
+      .industries-grid,
+      .feature-grid,
+      .footer-grid,
+      .hero-card-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding-top: 70px;
+      }
+
+      .hero-buttons,
+      .cta-buttons {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+      }
+
+      .brand-text h1 {
+        font-size: 1.25rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="topbar">Since 1960 • Premium Uniform Boutique • Custom Stitching • Embroidery • Bulk Orders</div>
-
-  <header class="site-header" id="top">
-    <div class="container nav-wrap">
-      <a class="brand" href="#top">
-        <div class="brand-mark">TD</div>
-        <div>
-          <div class="brand-name">TIRUMALA DRESSES</div>
-          <div class="brand-sub">6th Line, Main Road, Arundelpet, Guntur, Andhra Pradesh 522002</div>
-        </div>
-      </a>
-
-      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-
-      <nav class="nav-menu">
-        <a href="#home">Home</a>
-        <a href="#about">About Us</a>
-        <a href="#products">Products</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact Info</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-overlay"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">One place for all professional uniforms</p>
-          <h1>We dress every profession with pride and excellence.</h1>
-          <p class="hero-text">
-            Tirumala Dresses specializes in high-quality stitched uniforms for schools, colleges, hospitals, hotels,
-            kitchens, private staff, and corporate organizations. I developed this experience around your wireframe,
-            and i used a premium boutique-style visual language inspired by luxury textile stores, with the requested
-            red theme replacing green.
-          </p>
-          <div class="hero-actions">
-            <a href="#products" class="btn btn-primary">Explore Collections</a>
-            <a href="#contact" class="btn btn-secondary">Get Quotation</a>
-          </div>
-        </div>
-
-        <div class="hero-cards">
-          <div class="floating-card small">
-            <span>Trusted by schools & businesses</span>
-            <strong>Since 1960</strong>
-          </div>
-          <div class="floating-card large">
-            <h3>Premium tailoring</h3>
-            <p>Custom logo embroidery, branded stitching, durable fabrics, ready-made and made-to-measure uniforms.</p>
-          </div>
-        </div>
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-left">
+        <span>📍 6th Line, Main Road, Arundelpet, Guntur, Andhra Pradesh - 522002</span>
       </div>
-    </section>
-
-    <section class="features-intro">
-      <div class="container stats-grid">
-        <div class="stat-card">
-          <h3>Premium Fabrics</h3>
-          <p>Comfortable, durable, imported and everyday-wear options.</p>
-        </div>
-        <div class="stat-card">
-          <h3>Expert Tailoring</h3>
-          <p>Professional cutting, fitting, stitching and finishing for all sizes.</p>
-        </div>
-        <div class="stat-card">
-          <h3>Bulk Supply</h3>
-          <p>Reliable uniform fulfillment for institutions and businesses.</p>
-        </div>
-        <div class="stat-card">
-          <h3>Customization</h3>
-          <p>Logo embroidery, styling tweaks, color matching and quick processing.</p>
-        </div>
+      <div class="topbar-right">
+        <span>📞 +91 98482 34016</span>
+        <span>🕰️ Since 1960</span>
       </div>
-    </section>
-
-    <section class="section collections" id="products">
-      <div class="container">
-        <div class="section-head center">
-          <p class="eyebrow">Industries we serve</p>
-          <h2>Premium quality uniforms for every profession</h2>
-        </div>
-
-        <div class="filter-row">
-          <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="school">School</button>
-          <button class="filter-btn" data-filter="college">College</button>
-          <button class="filter-btn" data-filter="medical">Medical</button>
-          <button class="filter-btn" data-filter="hotel">Hotel</button>
-          <button class="filter-btn" data-filter="corporate">Corporate</button>
-          <button class="filter-btn" data-filter="kitchen">Kitchen</button>
-        </div>
-
-        <div class="collection-grid">
-          <article class="collection-card" data-category="school">
-            <div class="collection-image gradient-1"></div>
-            <div class="collection-content">
-              <h3>School Uniforms</h3>
-              <p>Shirts, pants, skirts, belts, sportswear and complete institution-ready sets.</p>
-              <button class="mini-link" data-modal="School uniforms with stitched sets, sports uniforms, belts, sweaters and bulk school supply packages.">Quick View</button>
-            </div>
-          </article>
-
-          <article class="collection-card" data-category="college">
-            <div class="collection-image gradient-2"></div>
-            <div class="collection-content">
-              <h3>College Coats & Aprons</h3>
-              <p>Lab coats, aprons and formal wear tailored for colleges and professional institutes.</p>
-              <button class="mini-link" data-modal="College coats, aprons, ID-ready formal uniforms and department-based customization.">Quick View</button>
-            </div>
-          </article>
-
-          <article class="collection-card" data-category="medical">
-            <div class="collection-image gradient-3"></div>
-            <div class="collection-content">
-              <h3>Medical Uniforms</h3>
-              <p>Aprons, scrubs, doctor coats and staff wear made for long daily use.</p>
-              <button class="mini-link" data-modal="Medical uniforms including scrubs, nursing sets, aprons and doctor coats with logo embroidery.">Quick View</button>
-            </div>
-          </article>
-
-          <article class="collection-card" data-category="hotel">
-            <div class="collection-image gradient-4"></div>
-            <div class="collection-content">
-              <h3>Hotel Uniforms</h3>
-              <p>Front-office, service, housekeeping and restaurant staff uniforms.</p>
-              <button class="mini-link" data-modal="Hotel and restaurant uniforms for front desk, housekeeping, service teams and hospitality staff.">Quick View</button>
-            </div>
-          </article>
-
-          <article class="collection-card" data-category="corporate">
-            <div class="collection-image gradient-5"></div>
-            <div class="collection-content">
-              <h3>Corporate Blazers & Formals</h3>
-              <p>Sharp formal shirts, blazers and polished presentation uniforms.</p>
-              <button class="mini-link" data-modal="Corporate blazers, formal shirts, trousers and office-ready uniform programs.">Quick View</button>
-            </div>
-          </article>
-
-          <article class="collection-card" data-category="hotel kitchen">
-            <div class="collection-image gradient-6"></div>
-            <div class="collection-content">
-              <h3>Kitchen & Staff Uniforms</h3>
-              <p>Chef coats, kitchen aprons, pantry wear and private staff uniform options.</p>
-              <button class="mini-link" data-modal="Kitchen, chef, pantry and private staff uniforms with durable stain-friendly fabrics.">Quick View</button>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section why-us" id="about">
-      <div class="container">
-        <div class="section-head center">
-          <p class="eyebrow">Why choose Tirumala Dresses</p>
-          <h2>Craftsmanship that matches your wireframe vision</h2>
-        </div>
-
-        <div class="benefits-grid">
-          <div class="benefit">No.1 quality fabrics</div>
-          <div class="benefit">High-end branded stitching</div>
-          <div class="benefit">Custom on-time embroidery</div>
-          <div class="benefit">Bulk uniform supply for institutions</div>
-          <div class="benefit">Comfortable and durable materials</div>
-          <div class="benefit">Professional tailoring and finishing</div>
-          <div class="benefit">Affordable pricing for bulk orders</div>
-          <div class="benefit">Wide range of uniform designs</div>
-          <div class="benefit">Perfect fit with accurate measurements</div>
-          <div class="benefit">Premium imported fabric options</div>
-          <div class="benefit">Trusted by schools and businesses</div>
-          <div class="benefit">Fast order processing</div>
-          <div class="benefit">Attention to detail in every stitch</div>
-          <div class="benefit">Customer satisfaction guaranteed</div>
-          <div class="benefit">Ready-made and custom options</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section story">
-      <div class="container story-grid">
-        <div>
-          <p class="eyebrow">Our journey</p>
-          <h2>From a small-scale tailoring setup to a trusted uniform destination</h2>
-        </div>
-        <div>
-          <p>
-            Tirumala Dresses grew through dedication, discipline and years of customer trust. What started as a focused
-            local tailoring effort expanded into a professional uniform boutique serving multiple industries with better
-            finishing, dependable delivery and premium material choices.
-          </p>
-          <p>
-            I worked your homepage structure into this layout so it feels premium like the reference site, while still
-            staying true to your business identity and the sketch you attached.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section gallery" id="gallery">
-      <div class="container">
-        <div class="section-head center">
-          <p class="eyebrow">Gallery</p>
-          <h2>Visual boutique-style presentation</h2>
-        </div>
-        <div class="gallery-grid">
-          <div class="gallery-card tall gradient-7"><span>Luxury Uniform Display</span></div>
-          <div class="gallery-card gradient-8"><span>School Sets</span></div>
-          <div class="gallery-card gradient-9"><span>Medical Aprons</span></div>
-          <div class="gallery-card gradient-10"><span>Corporate Formals</span></div>
-          <div class="gallery-card wide gradient-11"><span>Hotel & Restaurant Styling</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section testimonials">
-      <div class="container">
-        <div class="section-head center">
-          <p class="eyebrow">Customer trust</p>
-          <h2>What institutions appreciate most</h2>
-        </div>
-        <div class="testimonial-slider">
-          <div class="testimonial active">
-            <p>“Excellent stitching quality and neat finishing. Our school uniforms came exactly as expected.”</p>
-            <span>— School Management Team</span>
-          </div>
-          <div class="testimonial">
-            <p>“Professional tailoring, quick logo embroidery and good fabric options for our staff uniforms.”</p>
-            <span>— Hospitality Client</span>
-          </div>
-          <div class="testimonial">
-            <p>“Reliable bulk order support with proper measurements and consistent fit across departments.”</p>
-            <span>— Corporate Buyer</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section cta">
-      <div class="container cta-box">
-        <div>
-          <p class="eyebrow">Call us to get quotation for your business</p>
-          <h2>Need uniforms for your institution or company?</h2>
-        </div>
-        <a href="#contact" class="btn btn-primary">Request a Quote</a>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer" id="contact">
-    <div class="container footer-grid">
-      <div>
-        <h3>TIRUMALA DRESSES</h3>
-        <p>6th Line, Main Road<br>Arundelpet, Guntur - 522002</p>
-        <p>Contact: 9848 234016</p>
-      </div>
-      <div>
-        <h4>Why us</h4>
-        <ul>
-          <li>Trusted by schools & businesses</li>
-          <li>High quality fabrics</li>
-          <li>Available for all sizes</li>
-          <li>Customization & logo work</li>
-        </ul>
-      </div>
-      <div>
-        <h4>Quick links</h4>
-        <ul>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#top">Store</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Get a quotation</h4>
-        <form class="quote-form">
-          <input type="text" placeholder="Your Name" />
-          <input type="text" placeholder="Business / School Name" />
-          <input type="tel" placeholder="Phone Number" />
-          <textarea rows="4" placeholder="Tell us what uniforms you need"></textarea>
-          <button type="submit" class="btn btn-primary">Send Inquiry</button>
-        </form>
-      </div>
-    </div>
-  </footer>
-
-  <div class="modal" id="quickModal" aria-hidden="true">
-    <div class="modal-backdrop"></div>
-    <div class="modal-content">
-      <button class="modal-close" aria-label="Close">×</button>
-      <h3>Collection Details</h3>
-      <p id="modalText"></p>
     </div>
   </div>
 
-  <script src="script.js"></script>
+  <!-- Header -->
+  <header>
+    <div class="container navbar">
+      <a href="#home" class="brand">
+        <img src="favicon.png" alt="Tirumala Dresses Logo" class="brand-logo" />
+        <div class="brand-text">
+          <h1>Tirumala Dresses</h1>
+          <p>Premium Uniforms Since 1960</p>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#industries">Products</a></li>
+          <li><a href="#features">Why Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline">Call Now</a>
+        <a href="#contact" class="btn btn-primary">Get Quotation</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="hero-badge">Trusted Uniform Partner for Schools, Hospitals, Hotels & Businesses</div>
+        <h2>One Place for All <span>Professional Uniforms</span></h2>
+        <p>
+          Tirumala Dresses specializes in high-quality stitched uniforms for schools, colleges,
+          hospitals, hotels, restaurants, and corporate organizations. We combine premium fabrics,
+          expert tailoring, and custom embroidery to deliver uniforms with pride and excellence.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">Get Quotation</a>
+          <a href="#about" class="btn btn-outline" style="color:#6e0d17;border-color:#9b111e;">Learn More</a>
+        </div>
+
+        <div class="hero-highlights">
+          <span>✔ Premium Fabrics</span>
+          <span>✔ Custom Logo Embroidery</span>
+          <span>✔ Bulk Supply</span>
+          <span>✔ Accurate Stitching</span>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-card-content">
+          <img src="favicon.png" alt="Tirumala Dresses Shield Logo" class="hero-logo" />
+          <h3>Dress Every Profession with Pride</h3>
+          <p>
+            From school uniforms to corporate formals, we deliver elegant, durable, and comfortable uniforms
+            designed for daily professional use.
+          </p>
+        </div>
+
+        <div class="hero-card-grid">
+          <div class="mini-card">
+            <strong>Schools</strong>
+            Uniforms, belts, ties & complete sets
+          </div>
+          <div class="mini-card">
+            <strong>Medical</strong>
+            Aprons, lab coats & hospital wear
+          </div>
+          <div class="mini-card">
+            <strong>Hotels</strong>
+            Restaurant and kitchen staff uniforms
+          </div>
+          <div class="mini-card">
+            <strong>Corporate</strong>
+            Blazers, formals and custom branding
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="section about-preview" id="about">
+    <div class="container">
+      <div class="gold-line"></div>
+      <h2 class="section-title">About Tirumala Dresses</h2>
+      <p class="section-subtitle">
+        A trusted uniform supplier in Guntur known for craftsmanship, quality, and dependable service.
+      </p>
+
+      <div class="about-grid">
+        <div class="about-card">
+          <h3>Uniform Excellence with Tradition</h3>
+          <p>
+            Tirumala Dresses is a trusted uniform supplier based in Guntur, specializing in high-quality
+            stitched uniforms for schools, colleges, hospitals, hotels, restaurants, and corporate organizations.
+          </p>
+          <p>
+            We are committed to premium fabric quality, precision stitching, custom logo embroidery,
+            and professional finishing that reflects the identity of every institution we serve.
+          </p>
+
+          <ul class="about-points">
+            <li>Trusted by schools and businesses across industries</li>
+            <li>High-end branded stitching and neat finishing</li>
+            <li>Comfortable, durable, and professional designs</li>
+          </ul>
+        </div>
+
+        <div class="about-story">
+          <h4>Our Journey Since 1960</h4>
+          <p>
+            What started as a small-scale effort grew through hard work, dedication, and commitment to quality.
+            Over the years, Tirumala Dresses expanded by consistently delivering reliable stitching and customer satisfaction.
+          </p>
+          <p>
+            We faced challenges, learned through experience, and built a reputation step by step. Today, we proudly continue
+            that journey by serving institutions and businesses with uniforms that represent confidence, identity, and professionalism.
+          </p>
+          <p>
+            Our story is not just about garments — it is about trust, craftsmanship, and a legacy carried forward with pride.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries -->
+  <section class="section industries" id="industries">
+    <div class="container">
+      <div class="gold-line"></div>
+      <h2 class="section-title">Industries We Serve</h2>
+      <p class="section-subtitle">
+        Premium quality uniforms tailored for every profession and institution.
+      </p>
+
+      <div class="industries-grid">
+        <article class="industry-card">
+          <div class="industry-icon">🏫</div>
+          <h3>School Uniforms</h3>
+          <p>Neat, durable, and comfortable uniforms designed for daily school use.</p>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-icon">🎓</div>
+          <h3>College Coats & Aprons</h3>
+          <p>Professional college wear, lab aprons, coats, and specialty stitched garments.</p>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-icon">🩺</div>
+          <h3>Medical Uniforms</h3>
+          <p>Hospital uniforms, doctor coats, aprons, and healthcare professional attire.</p>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-icon">🏨</div>
+          <h3>Hotel Uniforms</h3>
+          <p>Smart and elegant hotel staff uniforms built for comfort and service appearance.</p>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-icon">💼</div>
+          <h3>Corporate Blazers & Formals</h3>
+          <p>Branded formal wear and polished uniforms for office and front-desk professionals.</p>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-icon">👔</div>
+          <h3>Private Staff Uniforms</h3>
+          <p>Uniform solutions for support staff, field staff, and service personnel.</p>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-icon">🧵</div>
+          <h3>Custom Stitching</h3>
+          <p>Tailor-made uniform customization with logo embroidery and institution-specific styling.</p>
+        </article>
+
+        <article class="industry-card">
+          <div class="industry-icon">👨‍🍳</div>
+          <h3>Kitchen Uniforms</h3>
+          <p>Functional chef and kitchen wear designed for hygiene, durability, and easy movement.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section features" id="features">
+    <div class="container">
+      <div class="gold-line"></div>
+      <h2 class="section-title">Why Choose Tirumala Dresses</h2>
+      <p class="section-subtitle">
+        Quality craftsmanship, trusted service, and premium finishing for every bulk and custom order.
+      </p>
+
+      <div class="feature-grid">
+        <article class="feature-card">
+          <div class="feature-top">
+            <div class="feature-icon">⭐</div>
+            <h3>Premium Quality Fabrics</h3>
+          </div>
+          <p>We use carefully selected fabrics that balance comfort, durability, and long-term wear.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-top">
+            <div class="feature-icon">🪡</div>
+            <h3>High-End Branded Stitching</h3>
+          </div>
+          <p>Professional stitching quality with clean finishing, accurate cuts, and consistent output.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-top">
+            <div class="feature-icon">🧶</div>
+            <h3>Custom Logo Embroidery</h3>
+          </div>
+          <p>Logo placement and embroidery solutions tailored to school, hospital, hotel, and company branding.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-top">
+            <div class="feature-icon">📦</div>
+            <h3>Bulk Uniform Supply</h3>
+          </div>
+          <p>Reliable order processing for institutions and businesses with consistent quality across large quantities.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-top">
+            <div class="feature-icon">📏</div>
+            <h3>Perfect Fit & Measurements</h3>
+          </div>
+          <p>Accurate measurement-based tailoring for better comfort, better appearance, and professional fit.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-top">
+            <div class="feature-icon">⚡</div>
+            <h3>Fast Order Processing</h3>
+          </div>
+          <p>Quick and dependable execution timelines to support institutions and businesses on schedule.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-top">
+            <div class="feature-icon">🏷️</div>
+            <h3>Affordable Bulk Pricing</h3>
+          </div>
+          <p>Competitive pricing for schools, hospitals, hotels, and organizations requiring uniform sets in volume.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-top">
+            <div class="feature-icon">🧥</div>
+            <h3>Ready-made & Custom Options</h3>
+          </div>
+          <p>Choose from ready-made clothing or customized stitched uniforms based on your requirement.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-top">
+            <div class="feature-icon">🤝</div>
+            <h3>Trusted Service Since 1960</h3>
+          </div>
+          <p>Our long-standing reputation is built on quality, honest work, and customer satisfaction.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-box">
+        <h2>Call Us Today to Get a Quotation for Your Business</h2>
+        <p>
+          Whether you need school uniforms, hospital aprons, restaurant uniforms, or corporate formals,
+          Tirumala Dresses is ready to deliver premium quality with dependable service.
+        </p>
+
+        <div class="cta-buttons">
+          <a href="tel:+919848234016" class="btn btn-primary">Call +91 98482 34016</a>
+          <a href="#contact" class="btn btn-outline">Send Inquiry</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="favicon.png" alt="Tirumala Dresses Logo" />
+          <div>
+            <h3>Tirumala Dresses</h3>
+            <p>Premium stitched uniforms for every profession with pride, quality, and excellence.</p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h4>Address</h4>
+        <p>6th Line, Main Road</p>
+        <p>Arundelpet, Guntur</p>
+        <p>Andhra Pradesh - 522002</p>
+      </div>
+
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#industries">Products</a></li>
+          <li><a href="#features">Why Choose Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact Info</h4>
+        <p><a href="tel:+919848234016">+91 98482 34016</a></p>
+        <p><a href="mailto:info@tirumaladresses.com">info@tirumaladresses.com</a></p>
+        <p>Custom uniforms | Bulk orders | Embroidery</p>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      © 2026 Tirumala Dresses. All rights reserved. | Since 1960, serving Guntur with pride.
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+  <script>
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("mobile-open");
+    });
+
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.classList.remove("mobile-open");
+      });
+    });
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) {
+        scrollTopBtn.classList.add("show");
+      } else {
+        scrollTopBtn.classList.remove("show");
+      }
+    });
+
+    scrollTopBtn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
