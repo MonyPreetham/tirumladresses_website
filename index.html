@@ -29,7 +29,6 @@
       --text-muted: #6d5b50;
       --border-light: rgba(212, 175, 55, 0.35);
       --shadow: 0 10px 30px rgba(43, 27, 18, 0.12);
-      --radius: 16px;
       --transition: all 0.3s ease;
       --max-width: 1240px;
     }
@@ -149,37 +148,6 @@
       to {
         transform: translateX(-50%);
       }
-    }
-
-    /* removed top bar styling because section is removed */
-    .brand-tagline {
-      color: var(--gold-soft);
-      font-size: 0.84rem;
-      line-height: 1.5;
-      margin-bottom: 6px;
-      font-weight: 500;
-    }
-
-    .premium-tagline {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 6px 10px;
-    }
-
-    .premium-tagline span {
-      white-space: nowrap;
-    }
-
-    .tag-sep {
-      color: var(--gold);
-      opacity: 0.95;
-      font-size: 0.72rem;
-      transform: translateY(-1px);
-    }
-
-    .topbar span {
-      opacity: 0.95;
     }
 
     header {
@@ -340,7 +308,7 @@
       align-items: center;
       justify-content: center;
       gap: 6px;
-      padding: 9px 16px;
+      padding: 10px 16px;
       border-radius: 999px;
       font-weight: 600;
       font-size: 0.88rem;
@@ -379,150 +347,6 @@
       border: none;
       color: var(--white);
       font-size: 1.5rem;
-      cursor: pointer;
-    }
-
-    .navbar {
-      min-height: 82px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 14px;
-      padding: 8px 0;
-    }
-
-    .brand {
-      display: flex;
-      align-items: flex-start;
-      gap: 10px;
-      min-width: 0;
-      flex: 1;
-    }
-
-    .brand-logo {
-      width: 56px;
-      height: 56px;
-      object-fit: contain;
-      border-radius: 12px;
-      background: rgba(255,255,255,0.08);
-      padding: 5px;
-      box-shadow: 0 0 0 1px rgba(212, 175, 55, 0.15);
-      margin-top: 2px;
-    }
-
-    .brand-text h1 {
-      font-family: "Playfair Display", serif;
-      color: var(--white);
-      font-size: clamp(1.45rem, 2vw, 2rem);
-      letter-spacing: 0.5px;
-      line-height: 1.1;
-      margin-bottom: 4px;
-    }
-
-    .brand-tagline {
-      color: var(--gold-soft);
-      font-size: 0.84rem;
-      line-height: 1.5;
-      margin-bottom: 4px;
-      font-weight: 500;
-    }
-
-    .brand-address {
-      color: rgba(255,255,255,0.88);
-      font-size: 0.84rem;
-      line-height: 1.45;
-      margin-bottom: 0;
-    }
-
-    .brand-text .since-text {
-      color: var(--gold-soft);
-      font-size: 0.82rem;
-      letter-spacing: 0.9px;
-      text-transform: uppercase;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-    }
-
-    .nav-links a {
-      color: var(--white);
-      font-weight: 500;
-      font-size: 0.92rem;
-      position: relative;
-      transition: var(--transition);
-    }
-
-    .nav-links a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: -6px;
-      width: 0;
-      height: 2px;
-      background: var(--gold);
-      transition: var(--transition);
-    }
-
-    .nav-links a:hover {
-      color: var(--gold-soft);
-    }
-
-    .nav-links a:hover::after {
-      width: 100%;
-    }
-
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      padding: 10px 16px;
-      border-radius: 999px;
-      font-weight: 600;
-      font-size: 0.88rem;
-      transition: var(--transition);
-      border: 1px solid transparent;
-      cursor: pointer;
-    }
-
-    .btn-primary {
-      background: linear-gradient(135deg, var(--gold), #f0c95b);
-      color: var(--deep-red);
-      box-shadow: 0 10px 24px rgba(212, 175, 55, 0.28);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 28px rgba(212, 175, 55, 0.34);
-    }
-
-    .btn-outline {
-      border-color: rgba(255,255,255,0.4);
-      color: var(--white);
-      background: transparent;
-    }
-
-    .btn-outline:hover {
-      border-color: var(--gold);
-      color: var(--gold-soft);
-      transform: translateY(-2px);
-    }
-
-    .menu-toggle {
-      display: none;
-      background: transparent;
-      border: none;
-      color: var(--white);
-      font-size: 1.6rem;
       cursor: pointer;
     }
 
@@ -684,85 +508,273 @@
       font-size: 1rem;
     }
 
-    .about-preview {
-      background: var(--white);
+    .about-legacy-section {
+      background: linear-gradient(180deg, #fbf6ee 0%, #f6efe3 100%);
+      padding: 80px 0;
+      color: #2b1b12;
     }
 
-    .about-grid {
+    .about-legacy-header {
+      text-align: center;
+      margin-bottom: 42px;
+    }
+
+    .about-legacy-header h2,
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      color: #263b72;
+      margin: 0;
+    }
+
+    .who-we-are-card h3,
+    .journey-box h3 {
+      font-family: "Playfair Display", serif;
+      color: #263b72;
+      font-size: 2rem;
+      margin-bottom: 6px;
+    }
+
+    .about-legacy-section {
+      background: linear-gradient(180deg, #fbf6ee 0%, #f6efe3 100%);
+      padding: 80px 0;
+      color: #2b1b12;
+    }
+
+    .about-legacy-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .about-legacy-header h2,
+    .section-heading h2 {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2rem, 3.5vw, 3rem);
+      color: #263b72;
+      margin: 0;
+    }
+
+    .about-split-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 36px;
-      align-items: center;
+      gap: 28px;
+      margin-bottom: 34px;
+      align-items: stretch;
     }
 
-    .about-card {
-      background: linear-gradient(180deg, #fffefb, #fff8eb);
-      border: 1px solid var(--border-light);
-      border-radius: 24px;
-      padding: 34px;
-      box-shadow: var(--shadow);
-    }
-
-    .about-card h3 {
-      font-family: "Playfair Display", serif;
-      font-size: 2rem;
-      color: var(--deep-red);
-      margin-bottom: 16px;
-    }
-
-    .about-card p {
-      color: var(--text-muted);
-      margin-bottom: 14px;
-    }
-
-    .about-points {
-      display: grid;
-      gap: 12px;
-      margin-top: 18px;
-    }
-
-    .about-points li {
-      background: var(--cream);
-      padding: 14px 16px;
-      border-radius: 14px;
-      border-left: 4px solid var(--gold);
-      color: var(--text-dark);
-      font-weight: 500;
-    }
-
-    .about-story {
-      background: linear-gradient(135deg, var(--deep-red), var(--primary-red));
-      color: var(--white);
-      border-radius: 24px;
-      padding: 36px;
-      min-height: 100%;
-      position: relative;
+    .about-split-card {
+      background: #fffaf2;
+      border: 1px solid rgba(181, 146, 83, 0.35);
+      border-radius: 18px;
+      box-shadow: 0 8px 26px rgba(43, 27, 18, 0.08);
       overflow: hidden;
-      box-shadow: 0 20px 40px rgba(110, 13, 23, 0.24);
     }
 
-    .about-story::after {
-      content: "Since 1960";
-      position: absolute;
-      right: -8px;
-      bottom: 12px;
+    .about-image-card {
+      padding: 0;
+    }
+
+    .about-content-card {
+      display: flex;
+      align-items: center;
+      padding: 28px;
+    }
+
+    .about-person-image-wrap {
+      width: 100%;
+      height: 100%;
+      background: #f3ede3;
+    }
+
+    .about-person-image {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .founder-image-wrap-large {
+      min-height: 320px;
+    }
+
+    .cofounder-image-wrap-large {
+      min-height: 320px;
+    }
+
+    .founder-large-image {
+      object-position: center 20%;
+    }
+
+    .cofounder-large-image {
+      object-position: center 10%;
+    }
+
+    .about-person-content h3,
+    .who-we-are-card h3,
+    .journey-box h3 {
       font-family: "Playfair Display", serif;
-      font-size: clamp(2.4rem, 6vw, 4.6rem);
-      color: rgba(255,255,255,0.08);
-      transform: rotate(-7deg);
-      pointer-events: none;
+      color: #263b72;
+      font-size: 2rem;
+      margin-bottom: 6px;
     }
 
-    .about-story h4 {
+    .about-person-content h4 {
+      color: #9a6d2f;
       font-family: "Playfair Display", serif;
-      font-size: 1.8rem;
-      margin-bottom: 16px;
-      color: var(--gold-soft);
-    }
-
-    .about-story p {
-      color: rgba(255,255,255,0.88);
+      font-size: 1.1rem;
       margin-bottom: 14px;
+    }
+
+    .about-person-content p,
+    .who-we-are-card p,
+    .journey-intro p,
+    .journey-box p {
+      color: #4d433d;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .who-we-are-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 54px;
+    }
+
+    .who-we-are-card {
+      background: rgba(255, 250, 242, 0.75);
+      border: 1px solid rgba(181, 146, 83, 0.25);
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .journey-section {
+      border-top: 1px solid rgba(181, 146, 83, 0.35);
+      padding-top: 36px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .journey-intro {
+      max-width: 1000px;
+      margin: 0 auto 34px;
+      text-align: left;
+    }
+
+    .journey-columns {
+      display: grid;
+      grid-template-columns: 1.2fr 0.9fr;
+      gap: 34px;
+    }
+
+    .journey-box {
+      background: rgba(255, 250, 242, 0.75);
+      border: 1px solid rgba(181, 146, 83, 0.25);
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .commitment-list {
+      list-style: none;
+      margin: 18px 0 0;
+      padding: 0;
+    }
+
+    .commitment-list li {
+      position: relative;
+      padding-left: 32px;
+      margin-bottom: 14px;
+      color: #4d433d;
+      font-size: 1rem;
+    }
+
+    .commitment-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #9a6d2f;
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    .founder-content p,
+    .who-we-are-card p,
+    .journey-intro p,
+    .journey-box p {
+      color: #4d433d;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    .who-we-are-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      margin-bottom: 54px;
+    }
+
+    .who-we-are-card {
+      background: rgba(255, 250, 242, 0.75);
+      border: 1px solid rgba(181, 146, 83, 0.25);
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .journey-section {
+      border-top: 1px solid rgba(181, 146, 83, 0.35);
+      padding-top: 36px;
+    }
+
+    .section-heading {
+      text-align: center;
+      margin-bottom: 26px;
+    }
+
+    .journey-intro {
+      max-width: 1000px;
+      margin: 0 auto 34px;
+      text-align: left;
+    }
+
+    .journey-columns {
+      display: grid;
+      grid-template-columns: 1.2fr 0.9fr;
+      gap: 34px;
+    }
+
+    .journey-box {
+      background: rgba(255, 250, 242, 0.75);
+      border: 1px solid rgba(181, 146, 83, 0.25);
+      border-radius: 18px;
+      padding: 24px;
+    }
+
+    .commitment-list {
+      list-style: none;
+      margin: 18px 0 0;
+      padding: 0;
+    }
+
+    .commitment-list li {
+      position: relative;
+      padding-left: 32px;
+      margin-bottom: 14px;
+      color: #4d433d;
+      font-size: 1rem;
+    }
+
+    .commitment-list li::before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #9a6d2f;
+      font-weight: 700;
+      font-size: 1.1rem;
     }
 
     .industries {
@@ -1028,15 +1040,16 @@
       place-items: center;
     }
 
-    @media (max-width: 980px) {
-      .header-nav-row {
+    @media (max-width: 1100px) {
+      .hero-grid,
+      .journey-columns {
         grid-template-columns: 1fr;
-        gap: 14px;
       }
 
-      .nav-actions {
-        justify-content: center;
-        flex-wrap: wrap;
+      .industries-grid,
+      .feature-grid,
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
       }
     }
 
@@ -1080,9 +1093,19 @@
       .menu-toggle {
         display: inline-block;
       }
+
+      .about-split-grid {
+        grid-template-columns: 1fr;
+      }
     }
 
     @media (max-width: 640px) {
+      .hero,
+      .section,
+      .about-legacy-section {
+        padding: 60px 0;
+      }
+
       .brand-top-center {
         flex-direction: row;
         gap: 10px;
@@ -1115,13 +1138,27 @@
         font-size: 0.8rem;
         padding: 8px 12px;
       }
+
+      .industries-grid,
+      .feature-grid,
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-person-content h3,
+      .who-we-are-card h3,
+      .journey-box h3 {
+        font-size: 1.5rem;
+      }
+
+      .founder-image-wrap-large,
+      .cofounder-image-wrap-large {
+        min-height: 240px;
+      }
     }
-
-
   </style>
 </head>
 <body>
-  <!-- Sale Banner -->
   <div class="sale-banner">
     <div class="sale-marquee">
       <div class="sale-track">
@@ -1147,7 +1184,6 @@
     </div>
   </div>
 
-  <!-- Header -->
   <header>
     <div class="header-main container">
       <div class="brand-stack">
@@ -1158,7 +1194,7 @@
             <div class="brand-since">Since 1960</div>
           </div>
         </div>
-  
+
         <div class="brand-categories">
           <span>School</span>
           <span class="dot">✦</span>
@@ -1174,12 +1210,12 @@
           <span class="dot">✦</span>
           <span>Custom</span>
         </div>
-  
+
         <div class="brand-address-line">
           <span class="location-icon">📍</span>
           <span>6th Line Main Road, Arundelpet, Guntur, Andhra Pradesh 522002</span>
         </div>
-  
+
         <div class="header-nav-row">
           <nav class="main-nav">
             <ul class="nav-links" id="navLinks">
@@ -1190,7 +1226,7 @@
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
-  
+
           <div class="nav-actions">
             <a href="tel:+919848234016" class="btn btn-outline">Call Now</a>
             <a href="#contact" class="btn btn-primary">Get Quotation</a>
@@ -1201,7 +1237,6 @@
     </div>
   </header>
 
-  <!-- Hero -->
   <section class="hero" id="home">
     <div class="container hero-grid">
       <div>
@@ -1258,53 +1293,129 @@
     </div>
   </section>
 
-  <!-- About Preview -->
-  <section class="section about-preview" id="about">
+  <section class="about-legacy-section" id="about">
     <div class="container">
-      <div class="gold-line"></div>
-      <h2 class="section-title">About Tirumala Dresses</h2>
-      <p class="section-subtitle">
-        A trusted uniform supplier in Guntur known for craftsmanship, quality, and dependable service.
-      </p>
-
-      <div class="about-grid">
-        <div class="about-card">
-          <h3>Uniform Excellence with Tradition</h3>
-          <p>
-            Tirumala Dresses is a trusted uniform supplier based in Guntur, specializing in high-quality
-            stitched uniforms for schools, colleges, hospitals, hotels, restaurants, and corporate organizations.
-          </p>
-          <p>
-            We are committed to premium fabric quality, precision stitching, custom logo embroidery,
-            and professional finishing that reflects the identity of every institution we serve.
-          </p>
-
-          <ul class="about-points">
-            <li>Trusted by schools and businesses across industries</li>
-            <li>High-end branded stitching and neat finishing</li>
-            <li>Comfortable, durable, and professional designs</li>
-          </ul>
+      <div class="about-legacy-header">
+        <h2>About Us</h2>
+      </div>
+  
+      <div class="about-split-grid">
+        <!-- Founder Row -->
+        <div class="about-split-card about-image-card">
+          <div class="about-person-image-wrap founder-image-wrap-large">
+            <img
+              src="ram_mohan_rao.png"
+              alt="Founder P Ram Mohan Rao"
+              class="about-person-image founder-large-image"
+            />
+          </div>
         </div>
-
-        <div class="about-story">
-          <h4>Our Journey Since 1960</h4>
+  
+        <div class="about-split-card about-content-card">
+          <div class="about-person-content">
+            <h3>P Ram Mohan Rao</h3>
+            <h4>Founder</h4>
+            <p>
+              P Ram Mohan Rao established Tirumala Dresses with a simple vision — to provide
+              quality stitched uniforms that meet the needs of institutions and professionals.
+              Through dedication, craftsmanship, and commitment to customer satisfaction, he laid
+              the strong foundation that continues to guide the business today.
+            </p>
+          </div>
+        </div>
+  
+        <!-- Co-Founder Row -->
+        <div class="about-split-card about-image-card">
+          <div class="about-person-image-wrap cofounder-image-wrap-large">
+            <img
+              src="srinivasa_and_sampath.png"
+              alt="Co-Founders P Srinivasa Rao and P Sampath Kumar"
+              class="about-person-image cofounder-large-image"
+            />
+          </div>
+        </div>
+  
+        <div class="about-split-card about-content-card">
+          <div class="about-person-content">
+            <h3>P Srinivasa Rao &amp; P Sampath Kumar</h3>
+            <h4>Co-Founders</h4>
+            <p>
+              Together with the founder, the co-founders played a vital role in expanding
+              Tirumala Dresses, strengthening its operations, and ensuring consistent quality
+              in every uniform produced. Their collective vision, hard work, and business values
+              helped grow Tirumala Dresses while maintaining the trust and reliability the brand
+              is known for.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div class="who-we-are-grid">
+        <div class="who-we-are-card">
+          <h3>Who We Are</h3>
           <p>
-            What started as a small-scale effort grew through hard work, dedication, and commitment to quality.
-            Over the years, Tirumala Dresses expanded by consistently delivering reliable stitching and customer satisfaction.
+            Tirumala Dresses is a trusted uniform supplier based in Guntur, specializing in
+            high-quality stitched uniforms for schools, hospitals, hotels, restaurants, and
+            corporate organizations. With a strong focus on fabric quality, precision stitching,
+            and customer satisfaction, we provide uniforms that represent professionalism,
+            comfort, and long-term durability.
           </p>
+        </div>
+      </div>
+  
+      <div class="journey-section">
+        <div class="section-heading">
+          <h2>Our Journey</h2>
+        </div>
+  
+        <div class="journey-intro">
           <p>
-            We faced challenges, learned through experience, and built a reputation step by step. Today, we proudly continue
-            that journey by serving institutions and businesses with uniforms that represent confidence, identity, and professionalism.
+            The journey of Tirumala Dresses began in 1960 as a small-scale tailoring effort,
+            driven by passion and dedication. In the early days, the focus was on carefully
+            stitching garments with attention to detail, and building trust with every customer.
+            This strong foundation helped shape Tirumala Dresses into a reliable name in uniform
+            stitching and institutional garment supply.
           </p>
-          <p>
-            Our story is not just about garments — it is about trust, craftsmanship, and a legacy carried forward with pride.
-          </p>
+        </div>
+  
+        <div class="journey-columns">
+          <div class="journey-box">
+            <h3>Our Journey</h3>
+            <p>
+              The journey of Tirumala Dresses began in 1960 as a small-scale tailoring effort,
+              driven by passion and dedication. In the early days, the focus was on carefully
+              stitching garments with attention to detail, and building trust with every customer.
+            </p>
+            <p>
+              Like any growing business, the path was not always easy. There were many challenges,
+              struggles, and obstacles, but through hard work, persistence, and commitment to
+              quality, Tirumala Dresses gradually expanded its reputation.
+            </p>
+            <p>
+              Over the years, the business evolved from a small local tailoring operation into a
+              recognized uniform supplier, serving a wide range of institutions including schools,
+              hospitals, hotels, restaurants, and corporate organizations.
+            </p>
+          </div>
+  
+          <div class="journey-box commitment-box">
+            <h3>Our Commitment</h3>
+            <p>
+              At Tirumala Dresses, we continue to uphold the principles that built our legacy:
+            </p>
+            <ul class="commitment-list">
+              <li>Premium quality fabrics</li>
+              <li>High-end professional stitching</li>
+              <li>Custom logo embroidery</li>
+              <li>Reliable and timely delivery</li>
+              <li>Customer-focused service</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Industries -->
   <section class="section industries" id="industries">
     <div class="container">
       <div class="gold-line"></div>
@@ -1365,7 +1476,6 @@
     </div>
   </section>
 
-  <!-- Why Choose Us -->
   <section class="section features" id="features">
     <div class="container">
       <div class="gold-line"></div>
@@ -1450,7 +1560,6 @@
     </div>
   </section>
 
-  <!-- CTA -->
   <section class="section cta">
     <div class="container">
       <div class="cta-box">
@@ -1468,7 +1577,6 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="footer" id="contact">
     <div class="container footer-grid">
       <div>
@@ -1504,7 +1612,6 @@
         <p><a href="tel:+919848234016">+91 98482 34016</a></p>
         <p><a href="tel:+919848249472">+91 98482 49472</a></p>
         <p><a href="mailto:info@tirumaladresses.com">info@tirumaladresses.com</a></p>
-        <p>Custom uniforms | Bulk orders | Embroidery</p>
       </div>
     </div>
 
@@ -1520,9 +1627,11 @@
     const navLinks = document.getElementById("navLinks");
     const scrollTopBtn = document.getElementById("scrollTopBtn");
 
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("mobile-open");
-    });
+    if (menuToggle) {
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("mobile-open");
+      });
+    }
 
     document.querySelectorAll(".nav-links a").forEach(link => {
       link.addEventListener("click", () => {
